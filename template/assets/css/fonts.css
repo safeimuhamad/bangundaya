@@ -1,0 +1,48 @@
+/* template/assets/css/fonts.css */
+
+/* Icomoon */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.ttf') format('ttf');
+  font-display: swap;
+}
+
+/* Font Awesome Solid */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/fa-solid-900.woff2') format('woff2'),
+       url('../fonts/fa-solid-900.woff') format('woff');
+  font-display: swap;
+}
+
+/* Font Awesome Regular */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fa-regular-400.woff2') format('woff2'),
+       url('../fonts/fa-regular-400.woff') format('woff');
+  font-display: swap;
+}
+
+/* Font Awesome Light */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/fa-light-300.woff2') format('woff2'),
+       url('../fonts/fa-light-300.woff') format('woff');
+  font-display: swap;
+}
+
+/* Font Awesome Brands */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fa-brands-400.woff2') format('woff2'),
+       url('../fonts/fa-brands-400.woff') format('woff');
+  font-display: swap;
+}

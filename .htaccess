@@ -1,0 +1,35 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+# ==========================
+# Force HTTPS (http -> https)
+# ==========================
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==========================
+# Redirect www -> non-www
+# ==========================
+RewriteCond %{HTTP_HOST} ^www\.bangundaya\.com$ [NC]
+RewriteRule ^(.*)$ https://bangundaya.com/$1 [L,R=301]
+
+# ==========================
+# Allow sitemap & robots
+# ==========================
+RewriteRule ^(sitemap\.xml|sitemap_index\.xml|robots\.txt)$ - [L]
+
+# ==========================
+# Skip existing files & folders
+# ==========================
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Menghapus trailing slash (garis miring di akhir) khusus untuk /en/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^en/$ /en [L,R=301]
+
+# ==========================
+# Route to CodeIgniter
+# ==========================
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]

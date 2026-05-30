@@ -1,0 +1,21 @@
+{
+  "name": "Bangundaya",
+  "short_name": "Bangundaya.com",
+  "description": "Bangundaya.com merupakan kontraktor listrik atau elektrikal yang menyediakan jasa instalasi listrik, genset dan jasa lainnya. Berpengalaman menjadi tukang taman lebih dari 10 tahun. Solusi terbaik untuk kebutuhan daya listrik.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6600",
+  "icons": [
+    {
+      "src": "template/assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "template/assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
